@@ -29,9 +29,10 @@ class _CalculatoraState extends State<Calculatora> {
     return MaterialApp(
       home: Container(
         padding: const EdgeInsets.all(10.0),
+        color: const Color.fromRGBO(70, 70, 70, 1.0),
         child: Column(
           children: <Widget>[
-            Visor(memoria.valor),
+            Visor(memoria.valorNoVisor),
             const SizedBox(height: 2),
             Teclado(_pressionado),
           ],
